@@ -264,6 +264,12 @@ input:checked + .slider:before {
 .markdown ol, .markdown ul {
   white-space: initial;
 }
+
+/*sometime gpt response with list item contains <p> with lines */
+.markdown ol li p,
+.markdown ul li p {
+  white-space: pre-wrap;
+}
 /* announcement */
 #modal-content-newsletter {
  line-height:28px;
